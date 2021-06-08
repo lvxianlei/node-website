@@ -1,0 +1,31 @@
+<%- include('./common/header',{ title, filePath }) %>
+<%- include('./common/public.ejs', { imageURL: groupInfo.mobile_pic_url, intro: groupInfo.intro }) %>
+<article>
+    <div class="memorabilia">
+        <h2>集团大事记</h2>
+        <ul class="year">
+            <% for(let i = 0; i < [...bigEvent.keys()].length; i++) { %>
+            <li class="<%= i === 0 ? 'select':'' %>"><%= [...bigEvent.keys()][i] %>年</li>
+            <% } %>
+        </ul>
+        <div class="memorabilia_content">
+            <% for(let i = 0; i < [...bigEvent.keys()].length; i++) {%>
+            <div class="<%= i === 0 ? 'content active' : 'content' %>">
+                <div class="content_one">
+                    <ol>
+                        <% for(let j = [...bigEvent.values()][i].length-1; j >= 0; j-- ) { %>
+                        <li>
+                            <a href="/news/<%= [...bigEvent.values()][i][j].type%>/<%= [...bigEvent.values()][i][j].news_id %>">
+                                <span><%= [...bigEvent.values()][i][j].publish_time.split('-')[1]%>月</span>
+                                <%= [...bigEvent.values()][i][j].title %>
+                            </a>
+                        </li>
+                        <% } %>
+                    </ol>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</article>
+<%- include('./common/footer.ejs') %>

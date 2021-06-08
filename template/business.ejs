@@ -1,0 +1,116 @@
+<%- include('./common/header',{title,filePath}) %>
+<div class="container">
+    <div class="top_bj">
+    </div>
+    <div class="busineass_main">
+        <ul>
+            <% for(let i=0; i < allTypes.length; i++ ) { %>
+            <li class="<%= allTypes[i].type === type ? 'active' : '' %>">
+                <a href="/business/<%= allTypes[i].type %>"><%= allTypes[i].name %></a>
+            </li>
+            <% } %>
+        </ul>
+        <div class="bus_content">
+            <% if(showType === '1'){ %>
+            <div class="content content1">
+                <div class="item">
+                    <% for(let i=0; i < business.length; i++ ) { %>
+                    <div class="bus_img">
+                        <div class="bus_head">
+                            <img src="<%= business[i].background_pic_url %>" alt="建材板块 新材料">
+                            <img class="left_top" src="<%= business[i].background_logo_url %>" alt="">
+                        </div>
+                        <div class="cover">
+                            <div class="cover_main">
+                                <% if(business[i].mask_logo_url !== ''){ %>
+                                <img src="<%= business[i].mask_logo_url %>">
+                                <%} %>
+                                <p><%= business[i].mask_intro %> </p>
+                                <% if(business[i].mask_bottom_pic_url !== ''){ %>
+                                <img src="<%= business[i].mask_bottom_pic_url %>">
+                                <%} %>
+                            </div>
+                        </div>
+                        <% if(business[i].background_href_pic_url){ %>
+                            <div class="itemDetail" style="display: none">
+                            <div class="itemContent">
+                                <img src="<%= business[i].background_href_pic_url %>" alt="昊越">
+                            </div>
+                        </div>
+                        <%}%>
+                    </div>
+                    <% } %>
+                    <div class="type">
+                        <% if(platePart.length === 0) {%>
+                        <div style="height: 200px;"></div>
+                        <%} else {%>
+                        <% for(let i=0; i < platePart.length; i++ ) { %>
+                        <div class="<%= platePart[i].mask_intro ? ' financial-item' : '' %>">
+                            <img src="<%= platePart[i].pic_url %>" alt="">
+                            <div class="cover">
+                                <div class="cover_main">
+                                    <p><%= platePart[i].mask_intro %></p>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
+                        <%} %>
+                    </div>
+                </div>
+            </div>
+            <% } else if( showType === '2'){ %>
+            <div class="content content3">
+                <div class="item">
+                    <% for(let i = 0; i < business.length; i++ ) { %>
+                    <div class="item1">
+                        <div class="item2-main">
+                            <img src="<%= business[i].background_pic_url %>" alt="">
+                        </div>
+                        <div class="cover">
+                            <div class="cover_main">
+                                <img class="pic" src="<%= business[i].mask_logo_url %>" alt="">
+                                <p>
+                                    <%= business[i].mask_intro %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <%}else if(showType === '3'){ %>
+            <div class="content content2">
+                <div class="item">
+                    <% for(let i=0; i < business.length; i++ ) { %>
+                    <div class="item1">
+                        <div class="item1-main">
+                            <img src="<%= business[i].background_pic_url %>" alt="<%= business[i].mask_title %>">
+                        </div>
+                        <div class="logo">
+                            <hr>
+                            <p><%= business[i].mask_title %></p>
+                        </div>
+                        <div class="cover">
+                            <div class="cover_main">
+                                <hr>
+                                <h2><%= business[i].mask_title %></h2>
+                                <p>
+                                    <%= business[i].mask_intro %>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="itemDetail" style="display: none">
+                            <div class="itemContent">
+                                <img src="<%= business[i].background_href_pic_url %>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <%} %>
+        </div>
+    </div>
+</div>
+<%- include('./common/footer.ejs') %>

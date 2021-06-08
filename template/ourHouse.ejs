@@ -1,0 +1,79 @@
+<%- include('./common/header',{title,filePath}) %>
+<article class='about container'>
+    <div class="sub-image">
+    </div>
+    <div class="tabs-wrap">
+        <div id="contentwrap" class="contentwrap">
+            <ul class="tab">
+                <li id="li_class" class="li" onclick="toClaRecordDetail()"><span>大事记</span></li>
+                <li id="li_photo" class="li" onclick="toTrainPhoto()"><span>高管简介</span></li>
+                <li id="li_stage" class="li current" onclick="toStageInfo()"><span>集团介绍</span></li>
+            </ul>
+        </div>
+    </div>
+    <article class='article ' id="li_Introduction">
+        <div class='introduce'>
+            <div class='introduceDiv'>
+                <!--<View  style="width:567px;height: 392px;margin: 58px 0 0 -70px"></View>-->
+                <img src="<%= groupInfo.pic_url %>" style="width:567px;height: 392px;margin: 0 0 0 -70px">
+                <div class='articleRight'>
+                    <h3><%= groupInfo.name %></h3>
+                    <div style="width: 80px;border-bottom: 2px solid #00569b"></div>
+                    <div class='articleRightContent'>
+                        <p><%= groupInfo.intro %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class='article show' id="li_leadership">
+        <div class="leadership_Div">
+            <% for(let i=0; i < executive.length; i++ ) { %>
+            <div class='leadershipOne'>
+                <div class="leadershipOne_img">
+                    <img src="<%= executive[i].pic_url %>">
+                </div>
+                <div class="leadershipRight">
+                    <p><%= executive[i].name %><span><%= executive[i].position %></span></p>
+                    <div class='leadershipRightContent'>
+                        <%= executive[i].intro %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </article>
+    <article class='article show' id="li_catalogue">
+        <div class='catalogueImg'>
+            <div class="catalogueTitle">
+                <h4>欧昊发展大事记</h4>
+                <span>2015-2020</span>
+            </div>
+            <div class="catalogueMain">
+                <span class="catalogue-bar catalogue-center">
+                    <span class="catalogue-bar-fill"></span>
+                </span>
+                <div class=" catalogue-aa">
+                    <% bigEvent.forEach((value, key) => {%>
+                    <div class="catalogue-state catalogue-a">
+                        <div class="catalogue-info">
+                            <span><%= key %>年</span>
+                            <% for(let i=value.length-1; i>=0; i-- ) { %>
+                            <% if(value[i].type!==null&& value[i].id!==null){ %>
+                            <a href="/news/<%= value[i].type%>/<%= value[i].news_id %>"
+                                target="_blank"><%= value[i].publish_time.split('-')[1] %>月 <%= value[i].title %></a>
+                            <%}else{%>
+                            <p><%= value[i].publish_time.split('-')[1] %>月 <%= value[i].title %></p>
+                            <%} %>
+                            <% } %>
+                        </div>
+                        <div class="catalogue-img"></div>
+                    </div>
+                    <% }) %>
+                </div>
+
+            </div>
+        </div>
+    </article>
+</article>
+<%- include('./common/footer.ejs') %>

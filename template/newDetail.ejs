@@ -1,0 +1,39 @@
+<%- include('./common/header',{title,filePath}) %>
+<link rel="stylesheet" href="/style/share.min.css">
+
+<div class="container">
+    <div class="top_bj">
+    </div>
+    <div class="news_main">
+        <ul>
+            <li>
+                <a class="<%= type==='group' ? 'active' :'' %>" href="/news/group">集团新闻</a>
+                <a class="<%= type==='subcompany' ? 'active' :'' %>" href="/news/subcompany">分子公司</a>
+            </li>
+        </ul>
+        <div class="content">
+            <div class="jt_news">
+                <div class="left_time">
+                    <% for(let i=0; i < newInfo.publish_time.split(" ").length; i++ ) { %>
+                    <p> <%= newInfo.publish_time.split(" ")[i] %> </p>
+                    <% } %>
+                </div>
+                <div class="right">
+                    <h2><%= newInfo.title %></h2>
+                    <h3>发布者：<%= newInfo.author %></h3>
+                    <div class="share social-share" data-sites="wechat,qq,weibo,qzone" data-initialized="true">
+                        <a href="#" class="social-share-icon icon-wechat" title="分享至微信"></a>
+                        <a href="#" class="social-share-icon icon-qq" title="分享至QQ"></a>
+                        <a href="#" class="social-share-icon icon-weibo" title="分享至微博"></a>
+                        <a href="#" class="social-share-icon icon-qzone" title="分享至QQ空间"></a>
+                    </div>
+                    <div class="right_info">
+                        <%- newInfo.content %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('./common/footer.ejs') %>
+<script type="text/javascript" src="/js/social-share.min.js"></script>

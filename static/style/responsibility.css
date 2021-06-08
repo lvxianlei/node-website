@@ -1,0 +1,85 @@
+.duty {
+    position: relative;
+}
+.sub-image {
+    width: 100%;
+    height: 96px;
+    background: url("/image/shzrHeader.png") no-repeat top center;
+    background-size: 90% auto;
+}
+
+@media screen and (min-width: 1921px) {
+    .sub-image {
+        height: 104px;
+    }
+}
+@media screen and (min-width:1366px) and (max-width:1680px) {
+    .sub-image  {
+        height: 78px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .sub-image  {
+        height: 61px;
+    }
+}
+.partyAll {
+    margin: 0 auto 80px;
+    width: 1085px;
+}
+.party {
+    width: 100%;
+    margin-top: 40px;
+}
+.party img {
+    width: 90px;
+    height: 28px;
+}
+.dangjian {
+    display: flex;
+    justify-content: space-between;
+}
+.partyItem {
+    width: 718px;
+    margin-top: 26px;
+}
+.partyItem a {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 86, 155, 1);
+    line-height: 26px;
+}
+.partyItem p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+    line-height: 24px;
+    margin-top: 16px;
+}
+.partyRight img {
+    width: 332px;
+    height: 398px;
+}
+.more {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    cursor: pointer;
+}
+.more img {
+    width: 24px;
+    height: 24px;
+    background: rgba(245, 245, 245, 1);
+    margin-right: 7px;
+}
+.more p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 24px;
+    margin-right: 7px;
+}
+.more p.active {
+    font-weight: 600;
+    color: #00569b;
+}

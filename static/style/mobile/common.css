@@ -1,0 +1,75 @@
+/* class="main-wrap" content内容统一加padding（解决底部nav遮挡内容问题） /common/header.ejs */
+.main-wrap {
+    width: 100%;
+    padding-bottom: 0.26rem;
+    box-sizing: border-box;
+}
+
+/* 头部 /common/header.ejs */
+.topBj {
+    width: 100%;
+    height: 1.31rem;
+    background: url("/image/mobileImg/t.png") no-repeat top center;
+    background-size: 100% 100%;
+}
+/* 底部导航 /common/nav.ejs */
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.33rem;
+    background: rgba(51, 135, 205, 1);
+}
+
+nav > div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.32rem 0 0.4rem 0;
+}
+
+nav > div > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > div > a > img {
+    width: 0.28rem;
+    height: 0.26rem;
+}
+
+nav > div > a > span {
+    font-size: 0.22rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 0.17rem;
+}
+
+/* public /common/public.ejs */
+.ouHouse {
+    padding: 0.75rem 0.5rem 0.64rem 0.41rem;
+    box-sizing: border-box;
+}
+
+.ouHouse .top_info {
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+}
+
+.ouHouse .top_info img {
+    width: 100%;
+    height: 2.89rem;
+    background-color: #00569b;
+}
+
+.ouHouse .top_info p {
+    padding: 0.37rem 0.28rem 0.64rem 0.29rem;
+    line-height: 1.5;
+    font-size: 0.24rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 1);
+}

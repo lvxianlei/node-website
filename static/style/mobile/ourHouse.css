@@ -1,0 +1,68 @@
+.memorabilia {
+    padding-bottom: 1rem;
+}
+
+.memorabilia h2 {
+    padding: 0 0 0.7rem 0.29rem;
+    font-size: 0.3rem;
+    font-weight: 500;
+    color: rgba(34, 85, 150, 1);
+}
+
+.memorabilia > ul {
+    height: 0.42rem;
+    display: flex;
+    border-bottom: solid 0.01rem #eaebea;
+    padding: 0 0.52rem 0 0.32rem;
+    justify-content: space-between;
+}
+
+.memorabilia > ul > li {
+    font-size: 0.22rem;
+    font-weight: 300;
+    color: rgba(82, 82, 82, 1);
+}
+
+.select {
+    font-size: 0.36rem !important;
+    font-weight: 500 !important;
+    color: rgba(34, 85, 150, 1) !important;
+    border-bottom: solid 0.04rem #225596;
+}
+
+.memorabilia_content .content .content_one {
+    margin: 0.38rem 0.26rem 0.5rem 0.25rem;
+    background-color: #f9f9f9;
+}
+
+.memorabilia_content .content .content_one ol {
+    padding: 0.5rem 0.59rem 1.02rem 0.2rem;
+}
+
+.memorabilia_content .content .content_one ol li:first-child {
+    font-size: 0.3rem;
+    font-weight: 200;
+    color: rgba(152, 152, 152, 1);
+    padding-top: 0;
+}
+
+.memorabilia_content .content .content_one ol li:first-child span {
+    display: inline-block;
+    font-size: 0.52rem;
+    font-weight: 200;
+    color: rgba(152, 152, 152, 1);
+    line-height: 1;
+}
+
+.memorabilia_content .content .content_one ol li {
+    padding-top: 0.47rem;
+    line-height: 1.4;
+}
+
+.content {
+    display: none;
+}
+
+.active {
+    display: block;
+}

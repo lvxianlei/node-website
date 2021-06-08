@@ -1,0 +1,50 @@
+<%- include('./common/header',{ title, filePath }) %>
+<div class="joinUs container">
+    <div class="sub-image">
+    </div>
+    <div class="joinUs_main">
+        <div class="content">
+            <div class="join_news">
+            <div class="join_news_info">
+                <div class="recruitment">
+                    <div class="recruitment_left">
+                        <h2><%=workItem.post_name %></h2>
+                        <div class="recruitment_left_message">
+                            <div class="recruitment_left_message_address">
+                                <img src="/image/join_place.jpg">
+                                <p><%=workItem.work_city %></p>
+                            </div>
+                            <p><%=workItem.company %></p>
+                            <p><%=workItem.post_category %></p>
+                            <p>招聘<%=workItem.num %>人</p>
+                        </div>
+                        <div class="recruitment_left_message_date">
+                            <img src="/image/join_time.jpg">
+                            <p>发布于<%=workItem.publish_time %></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="recruitmentContent">
+                    <div class="recruitmentContent_item">
+                        <h2>职位要求</h2>
+                        <p><%=workItem.post_requirements %></p>
+                    </div>
+                    <div class="recruitmentContent_item">
+                        <h2>岗位要求</h2>
+                        <pre><%=workItem.job_requirements %></pre>
+                    </div>
+                    <div class="recruitmentContent_item">
+                        <h2>工作地点</h2>
+                        <p><%=workItem.work_place %></p>
+                        <p>简历投递</p>
+                        <p><%=workItem.delivery_email %></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<%- include('./common/footer.ejs') %>

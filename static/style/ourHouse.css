@@ -1,0 +1,280 @@
+.about {
+    position: relative;
+}
+.sub-image{
+    width: 100%;
+    height: 96px;
+    background: url("/image/ouhao_bg.jpg") no-repeat top center;
+    background-size: 90% auto;
+}
+@media screen and (min-width: 1921px) {
+    .sub-image {
+        height: 104px;
+    }
+}
+@media screen and (min-width:1366px) and (max-width:1680px) {
+    .sub-image  {
+        height: 78px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .sub-image  {
+        height: 61px;
+    }
+}
+ul.tab {
+    border-bottom: 1px solid #ececec;
+    height: 59px;
+    width: 90%;
+    margin: auto;
+}
+
+ul.tab li {
+    float: right;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+ul.tab li.li {
+    font-size: 16px;
+    height: 41px;
+    line-height: 30px;
+    margin-top: 19px;
+    margin-left: 45px;
+}
+ul.tab li.li:first-child {
+    margin-right: 110px;
+}
+ul.tab li.current {
+    border-bottom: 2px solid #00569b;
+    font-size: 16px;
+    color: #00569b;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.article.show {
+    display: none;
+}
+.article:after {
+    content: "";
+    display: block;
+    margin-top: 100px;
+}
+.introduce {
+    width: 1010px;
+    height: auto;
+    margin: auto;
+    padding-top: 112px;
+}
+.introduceDiv {
+    width: 100%;
+    height: auto;
+    border: 1px solid #00569b;
+    display: flex;
+    align-items: center;
+    /*background: url("../image/jianjiebg_03.png") no-repeat;*/
+}
+.articleRight {
+    display: flex;
+    flex-direction: column;
+    margin-left: 68px;
+    padding: 40px;
+}
+.articleRight h3 {
+    font-size: 25px;
+    color: #00569b;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.articleRightContent {
+    width: 353px;
+    line-height: 25px;
+    margin-top: 25px;
+}
+p {
+    font-size: 14px;
+    color: #535353;
+    font-family: "微软雅黑";
+}
+.leadership_Div {
+    width: 990px;
+    height: auto;
+    margin: 64px auto;
+}
+
+.leadership:after {
+    content: "";
+    display: block;
+    margin-top: 100px;
+}
+.leadershipOne {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 246px;
+    background-color: #f3f3f3;
+
+}
+.leadershipOne_img {
+    width: 184px;
+    height: 246px;
+    overflow: hidden;
+}
+.leadershipOne_img img {
+    height: auto;
+}
+.leadershipRight {
+    width: 814px;
+    padding: 20px 70px 0 62px;
+    box-sizing: border-box;
+}
+
+.leadershipRight > p {
+    font-size: 25px;
+    color: #00569b;
+    font-weight: bold;
+    padding-bottom: 12px;
+    display: inline-block;
+}
+
+.leadershipRight > p > span {
+    font-size: 16px;
+    color: #00569b;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.leadershipRightContent {
+    margin-top: 10px;
+    line-height: 23px;
+}
+.catalogueImg {
+    width: 928px;
+    margin: 90px auto;
+}
+.catalogueTitle h4 {
+    font-size: 24px;
+    color: #00569b;
+    font-weight: bold;
+    padding-bottom: 22px;
+}
+.catalogueTitle span {
+    font-size: 16px;
+    color: #535353;
+    font-weight: bold;
+    padding-top: 22px;
+    line-height: 1;
+}
+.catalogueMain {
+    position: relative;
+}
+.catalogue-bar {
+    position: absolute;
+    width: 4px;
+    top: 0;
+    bottom: 0;
+    border-left: dashed 2px #89b4cf;
+}
+.catalogue-bar:before {
+    clear: both;
+    content: "";
+    display: block;
+    width: 52px;
+    height: 52px;
+    background: url("/image/ourhouseLogo.png") no-repeat;
+    overflow: hidden;
+    position: absolute;
+    top: -16px;
+    left: -28px;
+}
+
+.catalogue-center {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.catalogue-bar-fill {
+    background-color: #009abb;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0;
+}
+.catalogue-state {
+    position: relative;
+    width: 100%;
+}
+.catalogue-aa .catalogue-a:nth-child(odd) {
+    width: 51%;
+    display: flex;
+    justify-content: flex-end;
+}
+.catalogue-aa .catalogue-a:nth-child(even) {
+    width: 90.7%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.catalogue-aa > div:last-child {
+    padding-bottom: 130px;
+}
+.catalogue-a {
+    padding-top: 136px;
+}
+.catalogue-aa .catalogue-a:nth-child(odd) .catalogue-info {
+    margin-right: 20px;
+    display: block;
+}
+.catalogue-aa .catalogue-a:nth-child(even) .catalogue-info {
+    text-align: left;
+    margin-left: 20px;
+    display: block;
+}
+.catalogue-aa .catalogue-a:nth-child(odd) .catalogue-info span{
+    text-align: right;
+}
+.catalogue-a .catalogue-info span {
+    font-size: 24px;
+    color: #00569b;
+    margin-bottom: 16px;
+    display: block;
+
+}
+.catalogue-a .catalogue-info p {
+    width: 227px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 8px;
+    text-align: left;
+}
+.catalogue-a .catalogue-info a {
+    display: block;
+    width: 227px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 8px;
+    text-align: left;
+    color: #00569b;
+}
+.catalogue-aa .catalogue-a:nth-child(odd) .catalogue-img {
+    display: block;
+    height: 24px;
+    width: 142px;
+    background: url("/image/ourhouse_dote.png") no-repeat;
+    overflow: hidden;
+}
+.catalogue-aa .catalogue-a:nth-child(even) .catalogue-img {
+    display: block;
+    height: 24px;
+    width: 142px;
+    background: url("/image/ourhouse_dote.png") no-repeat;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+#li_catalogue:after {
+    content: "";
+    display: block;
+   margin-bottom: 100px;
+}

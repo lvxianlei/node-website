@@ -1,0 +1,50 @@
+.leader {
+    width: 100%;
+    padding: 0 0.25rem 1.33rem;
+    box-sizing: border-box;
+}
+
+.leader-item {
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 0.3rem 0.38rem;
+    box-sizing: border-box;
+    background-color: #efefef;
+}
+
+.leader-item .top {
+    display: flex;
+    justify-content: start;
+}
+
+.leader-item .top img {
+    display: block;
+    width: 1.09rem;
+    height: 1.09rem;
+    border-radius: 50%;
+}
+
+.leader-item .top ul {
+    margin-left: 0.3rem;
+    padding: 0.2rem 0;
+    width: 50%;
+    height: 1.09rem;
+    box-sizing: border-box;
+}
+
+.leader-item .top ul li {
+    color: #3387cd;
+    font-size: 0.34rem;
+    line-height: 0.36rem;
+}
+
+.leader-item .top ul li:nth-child(2) {
+    margin-top: .1rem;
+    font-size: 0.24rem;
+}
+
+.leader-item .description {
+    padding-top: .2rem;
+    font-size: 0.24rem;
+    line-height: 0.38rem;
+}

@@ -1,0 +1,29 @@
+<%- include('./common/header',{title,filePath}) %>
+<div class="newsList">
+    <% if(type === 'group' || type ==='subcompany') { %>
+    <div class="newsList_title">
+        <a class="<%= type === 'group' ? 'active' : '' %>" href="/news/group">集团新闻</a>
+        <a class="<%= type === 'subcompany' ? 'active' : '' %>" href="/news/subcompany">分子公司新闻</a>
+    </div>
+    <% } %>
+    <div class="news_content">
+        <div class="news_one">
+            <div class="main">
+                <% for(let i = 0; i < news.length; i++ ) { %>
+                <a class="jt_news_item1" href="/news/<%= type %>/<%= news[i].id %>">
+                    <div>
+                        <p><%= news[i].title %></p>
+                        <p><%= news[i].publish_time %></p>
+                    </div>
+                    <div>
+                        <img src="/image/mobileImg/right.png" alt="">
+                    </div>
+                </a>
+                <% } %>
+            </div>
+            <button class="more"></button>
+        </div>
+    </div>
+</div>
+<%- include('./common/footer.ejs') %>
+<script type="text/javascript" src='/js/ejs.min.js'></script>

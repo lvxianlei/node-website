@@ -1,0 +1,218 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    flex: auto;
+}
+header {
+    width: 100%;
+    height: 80px;
+    user-select: none;
+}
+
+header .headerMain {
+    width: 1124px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .headerMain .logo {
+    width: 116px;
+    height: 35px;
+    margin-top: 22px;
+}
+
+nav {
+    width: 520px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 80px;
+}
+
+.nav > a {
+    width: 82px;
+    color: #00569b;
+    display: block;
+    text-align: center;
+}
+
+.nav .bg {
+    height: 80px;
+    background: url("/image/nav_bj.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.nav .staff {
+    position: relative;
+    width: 82px;
+    color: #00569b;
+    display: block;
+    text-align: center;
+}
+
+.nav .staff:hover .staff_list {
+    height: 80px;
+}
+
+.staff .staff_list {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 82px;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.staff_list li {
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.staff_list li:hover {
+    cursor: pointer;
+    color: #00569b;
+}
+
+.staff_list li > a {
+    color: #d2ced5;
+}
+
+.staff_list li > a:hover {
+    list-style: none;
+    color: #00569b;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    background-color: #00569b;
+    box-sizing: border-box;
+    border-top: 4px solid #74c6b5;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .main {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.main .foot-main {
+    width: 100%;
+    height: 70px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.main .foot-main > div {
+    display: flex;
+    align-items: center;
+}
+.main .foot-main div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .foot-main ul > li {
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+}
+.main .foot-main ul > li:nth-child(2) {
+    margin-top: 8px;
+}
+.main .foot-main ul > li:nth-child(2) a {
+    width: 88%;
+}
+.main .foot-main ul > li:nth-child(3) {
+    margin-left: 16px;
+}
+.main .foot-main ul > li a {
+    display: block;
+}
+.main .foot-main ul > li:first-child a img {
+    width: 70px;
+    height: auto;
+    margin-top: 18px;
+}
+.main .foot-main ul > li:nth-child(3) a img {
+    width: 70px;
+    height: auto;
+    margin-top: 18px;
+}
+.main .foot-main ul > li:nth-child(4) a img {
+    width: 152px;
+    height: auto;
+    margin-top: -44px;
+}
+.main .foot-main ul > li:nth-child(4) {
+    margin-left: -4px;
+}
+.foot-main .code {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.foot-main .code:hover {
+    transform: scale(3);
+    top: -59px;
+}
+.footer .footer-description {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    line-height: 72px;
+}
+
+.footer-description span {
+    display: inline-block;
+    text-align: left;
+}
+
+.footer-description .span-a {
+    width: 342px;
+}
+
+.footer-description .span-b {
+    position: absolute;
+    right: 175px;
+    width: 120px;
+}
+
+.footer-description .span-b a {
+    color: #fff;
+}
+
+.footer-description .span-c {
+    position: absolute;
+    right: 0;
+    width: 175px;
+    text-align: right;
+}

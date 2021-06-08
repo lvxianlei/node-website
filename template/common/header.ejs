@@ -1,0 +1,41 @@
+<!doctype html>
+<html charset="utf8">
+
+<head>
+    <title>欧昊集团</title>
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/swiper.min.css">
+    <link rel="stylesheet" href="/style/common.css">
+    <link rel="stylesheet" href="/style/<%= filePath %>.css" />
+    <link rel="shortcut icon" href="/image/ourhouseLogo.png" type="image/x-icon">
+    <meta name="referrer" content="never">
+    <meta name="baidu-site-verification" content="code-a5hBmflgaK" />
+</head>
+
+<body>
+    <header>
+        <div class="headerMain">
+            <h1 class="logo">
+                <a href="/"><img src="/image/logo1.png" alt="欧昊"></a>
+            </h1>
+            <div>
+                <nav class="nav">
+                    <a href="/" class=<%= filePath === 'index'? "bg":'' %> data-class=<%= filePath === 'index'? "bg":'' %>>首&nbsp;页</a>
+                    <a href="/ourHouse" class='<%= filePath === 'ourHouse'? "bg":'' %>' data-class=<%= filePath === 'ourHouse'? "bg":'' %>>欧昊集团</a>
+                    <a href="/business/building" class='<%= filePath === 'business'? "bg":'' %>' data-class=<%= filePath === 'business'? "bg":'' %>>业务单元</a>
+                    <a href="/responsibility" class='<%= filePath === 'responsibility'? "bg":'' %>' data-class=<%= filePath === 'responsibility'? "bg":'' %>>社会责任</a>
+                    <a href="/news/group" class='<%= filePath === 'news'|| filePath === 'newDetail'? "bg":'' %>' data-class=<%= filePath === 'news'|| filePath === 'newDetail'? "bg":'' %>>新闻中心</a>
+                    <a href="/joinUs" class='<%= filePath === 'joinUs'|| filePath === 'joinUsDetail'? "bg":'' %>' data-class=<%= filePath === 'joinUs' || filePath === 'joinUsDetail'? "bg":'' %>>加入欧昊</a>
+                    <a href="/contactUs" class='<%= filePath === 'contactUs'? "bg":'' %>' data-class=<%= filePath === 'contactUs'? "bg":'' %>>联系我们</a>
+                    <div class="staff">
+                        <span>员工入口</span>
+                        <ul class="staff_list">
+                            <li><a href="http://erp.ouhaogroup.com/k3Cloud/html5" target="_black">ERP系统</a></li>
+                            <li><a href="http://oa.ouhaogroup.com/login.jsp" target="_black">流程管理系统</a></li>
+                            <li><a href="https://exmail.qq.com/domain/ebrun.com" target="_black">企业邮箱</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>

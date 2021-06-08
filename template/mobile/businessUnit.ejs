@@ -1,0 +1,11 @@
+<%- include('./common/header',{title,filePath}) %>
+<article class="business-wrap">
+    <ul class="business">
+        <% for(let i=0; i < allTypes.length; i++ ) { %>
+        <li class="business-item">
+            <a href="/business/<%= allTypes[i].type %>"><img src="<%= allTypes[i].mobile_pic_url %>" alt=''/></a>
+        </li>
+        <% } %>
+    </ul>
+</article>
+<%- include('./common/footer.ejs') %>

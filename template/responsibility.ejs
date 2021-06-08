@@ -1,0 +1,57 @@
+<%- include('./common/header',{ title, filePath }) %>
+<article class="duty container">
+    <div class="sub-image">
+    </div>
+    <div class="partyAll">
+        <div class="party">
+            <img src="image/dangjian.png" alt="">
+            <div class="dangjian">
+                <div class="partyLeft partygovernment" data-pages=<%= partygovernment.pages %>>
+                    <% for(let i = 0; i < partygovernment.list.length; i++ ) { %>
+                    <div class="partyItem">
+                        <a href="/news/partygovernment/<%= partygovernment.list[i].id %>"
+                            target="_blank"><%= partygovernment.list[i].title %></a>
+                        <p><%= partygovernment.list[i].summary %></p>
+                    </div>
+                    <% } %>
+                </div>
+                <div class="partyRight">
+                    <img src="image/dangjianBg.png" alt="">
+                </div>
+            </div>
+            <div class="more partygovernment">
+                <img class="left" src="image/leftArrow.png" alt="">
+                <% for(let i = 0; i < partygovernment.pages; i++ ) { %>
+                <p class="<%= i===0?'active':'' %>"><%= i+1 %></p>
+                <% } %>
+                <img class="right" src="image/rightArrow.png" alt="">
+            </div>
+        </div>
+        <div class="party">
+            <img src="image/gongyi.png" alt="">
+            <div class="dangjian">
+                <div class="partyLeft publicservice" data-pages=<%= publicservice.pages %>>
+                    <% for(let i = 0; i < publicservice.list.length; i++ ) { %>
+                    <div class="partyItem">
+                        <a href="/news/publicservice/<%= publicservice.list[i].id %>"
+                            target="_blank"><%= publicservice.list[i].title %></a>
+                        <p><%= publicservice.list[i].summary %></p>
+                    </div>
+                    <% } %>
+                </div>
+                <div class="partyRight">
+                    <img src="image/gongyiBg.png" alt="">
+                </div>
+            </div>
+            <div class="more publicservice">
+                <img class="left" src="image/leftArrow.png" alt="">
+                <% for(let i = 0; i < publicservice.pages; i++ ) { %>
+                <p class="<%= i===0?'active':'' %>"><%= i+1 %></p>
+                <% } %>
+                <img class="right" src="image/rightArrow.png" alt="">
+            </div>
+        </div>
+    </div>
+</article>
+<script type="text/javascript" src='/js/ejs.min.js'></script>
+<%- include('./common/footer.ejs') %>

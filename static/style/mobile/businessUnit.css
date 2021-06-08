@@ -1,0 +1,34 @@
+.business-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.business {
+    display: flex;
+    flex-wrap: wrap;
+    width: 7.76rem;
+    margin-left: -0.13rem;
+}
+
+.business-item {
+    width: 3.7rem;
+    height: 3.6rem;
+    color: #fff;
+    background-color: #000;
+    margin-left: 0.13rem;
+    margin-top: 0.32rem;
+}
+
+.business-item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 3.6rem;
+    color: #fff;
+}
+
+.business-item a img{
+    width: 100%;
+    height: 100%;
+}

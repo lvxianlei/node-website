@@ -1,0 +1,33 @@
+<%- include('./common/header',{title,filePath}) %>
+ <div class="container">
+     <div class="top_bj">
+     </div>
+     <div class="contact_main">
+         <ul>
+             <!-- <li>
+                 顺德
+             </li> -->
+             <li class="active">
+                 北京
+             </li>
+             <li>
+                 上海
+             </li>
+             <li>
+                 广州（在建）
+             </li>
+         </ul>
+         <div class="contact_content">
+             <div class="contact_info" >
+                 <div class="contact_sd" id="allmap"></div>
+                 <div class="posi">
+                    <input id="start" type="text" placeholder="请输入起点">
+                    <input id="end" type="text" value="北京欧昊总部">
+                    <img class="chaxun" src="/image/queding.png" alt="确定">
+                </div>
+             </div>
+         </div>
+     </div>
+ </div>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Gt9UTiT6jZo8YzftsyUpbYGcPtrwx4fd"></script>
+<%- include('./common/footer.ejs') %>

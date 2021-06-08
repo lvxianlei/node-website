@@ -1,0 +1,256 @@
+
+.banner {
+    width: 90%;
+    margin: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    max-height: 410px;
+    margin: auto;
+}
+
+.swiper-button-next {
+    background-image: url('/image/right.png') !important;
+    right: 72px !important;
+    outline: none;
+}
+
+.swiper-button-prev {
+    background-image: url('/image/left.png') !important;
+    left: 72px !important;
+    outline: none;
+}
+
+.swiper-pagination {
+    bottom: 10px !important;
+}
+
+.swiper-pagination span {
+    width: 15px;
+    height: 15px;
+    border: solid 2px #ffffff;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff !important;
+}
+
+/*轮播结束*/
+/*article*/
+.article {
+    width: 1124px;
+    margin: auto;
+    display: flex;
+    padding: 60px 0 54px 0;
+    justify-content: space-between;
+}
+
+.article .articleLeft {
+    width: 562px;
+    cursor: default;
+}
+
+.article h2 {
+    font-size: 16px;
+    color: #00569b;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.article .title {
+    padding-left: 28px;
+}
+
+.article .articleLeft p {
+    font-size: 14px;
+    color: #595757;
+    line-height: 26px;
+    padding-top: 24px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+}
+
+.article .articleRight {
+    width: 446px;
+    position: relative;
+
+}
+
+.article .articleRight .articleRight_title {
+    width: 446px;
+    display: flex;
+}
+
+.article .articleRight .articleRight_title span {
+    margin-right: 44px;
+    font-size: 14px;
+    color: #00569b;
+    font-weight: bold;
+    padding-left: 6px;
+    cursor: pointer;
+    height: 42px;
+}
+
+.article .articleRight .articleRight_title .line {
+    position: absolute;
+    width: 65px;
+    height: 2px;
+    left: 0;
+    top: 30px;
+    z-index: 1;
+    background-color: #00569b;
+}
+
+.article .articleRight > hr {
+    width: 100%;
+    border: solid 1px #f6f6f6;
+    position: absolute;
+    top: 23px;
+}
+
+.article .articleRight .articleRight_info {
+    padding-top: 15px;
+    height: 98px;
+    overflow: hidden;
+}
+
+.article .articleRight .articleRight_info .item1 {
+    position: relative;
+    display: none;
+}
+
+.article .articleRight .articleRight_info .item1:first-child {
+    display: block;
+}
+
+.article .articleRight .articleRight_info a {
+    color: #808080;
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+}
+
+.article .articleRight .articleRight_info a:hover {
+    color: #00569b;
+}
+
+.article .articleRight .articleRight_info a > span {
+    padding-right: 25px;
+}
+
+.article .articleRight .articleRight_info hr {
+    position: absolute;
+    left: 88px;
+    top: -10px;
+    height: 82px;
+    border: solid 1px #f6f6f6;
+}
+
+/*article结束*/
+/*section*/
+.accordion {
+    width: 90%;
+    background-color: #ececec;
+    box-sizing: border-box;
+    margin:0 auto 54px;
+}
+
+.accordion-sub {
+    background-color: #fff;
+}
+
+.accordion .accordion-main {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    background: url("/image/item.png") no-repeat;
+    background-size: 2462px 504px;
+    background-position: 0px -10px;
+}
+
+.accordion-main li {
+    transition: 0.4s;
+    width: 244px;
+    height: 240px;
+    background: url("/image/item.png") no-repeat;
+    background-size: 2462px 504px;
+    cursor: pointer;
+}
+
+.accordion-main li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.accordion li:nth-child(1) {
+    background-position: -437px -10px;
+}
+
+.accordion li:nth-child(2) {
+    background-position: -1110px -10px;
+}
+
+.accordion li:nth-child(3) {
+    background-position: -1800px -10px;
+}
+
+.accordion li:nth-child(1):hover {
+    width: 422px;
+    background-position-x: -679px;
+}
+
+.accordion li:nth-child(2):hover {
+    width: 422px;
+    background-position-x: -1350px;
+}
+
+.accordion li:nth-child(3):hover {
+    width: 422px;
+    background-position-x: -2030px;
+}
+
+.accordion-sub .accordion-main {
+    justify-content: flex-start;
+    background-position: -1291px -254px;
+}
+
+.accordion-sub li:nth-child(1) {
+    background-position: -10px -255px;
+}
+
+.accordion-sub li:nth-child(2) {
+    background-position: -678px -255px;
+}
+
+.accordion-sub li:nth-child(3) {
+    background-position: -1350px -255px;
+}
+
+.accordion-sub li:nth-child(1):hover {
+    width: 422px;
+    background-position-x: -240px;
+}
+
+.accordion-sub li:nth-child(2):hover {
+    width: 422px;
+    background-position-x: -909px;
+}
+
+.accordion-sub li:nth-child(3):hover {
+    width: 422px;
+    background-position-x: -1585px;
+}

@@ -1,0 +1,25 @@
+<%- include('./common/header', { title, filePath }) %>
+<article>
+    <% if(showType === '1'){ %>
+    <% for(let i=0; i < business.length; i++ ) { %>
+    <%- include('./common/public', { imageURL: business[i].mobile_background_pic_url, intro: business[i].mask_intro }) %>
+    <% } %>
+    <div class="type">
+        <% for(let i = 0; i < platePart.length; i++ ) { %>
+        <div class="<%= platePart[i].mask_intro ? ' financial-item' : '' %>">
+            <img src="<%= platePart[i].mobile_pic_url %>" alt="">
+            <div class="cover">
+                <div class="cover_main">
+                    <p><%= platePart[i].mask_intro %></p>
+                </div>
+            </div>
+        </div>
+        <%} %>
+    </div>
+    <% } else { %>
+    <% for(let i=0; i < business.length; i++ ) { %>
+    <%- include('./common/public', { imageURL: business[i].mobile_background_pic_url, intro: business[i].mask_intro }) %>
+    <%} %>
+    <%} %>
+</article>
+<%- include('./common/footer.ejs') %>

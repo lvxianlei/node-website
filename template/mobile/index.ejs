@@ -1,0 +1,85 @@
+<%- include('./common/header',{title,filePath}) %>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <% for(let i = 0; i < banners.length; i++ ) { %>
+        <div class="swiper-slide">
+            <a href="javascript:;">
+                <img src="<%= banners[i].pic_url %>" alt="" />
+            </a>
+        </div>
+        <% } %>
+    </div>
+    <!--如果需要分页器-->
+    <div class="swiper-pagination"></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+</div>
+<article>
+    <div class="list">
+        <a href="/news/group" class="title">
+            <span>新闻中心</span>
+            <img src="/image/mobileImg/right.png" alt="">
+        </a>
+        <div class="list_news">
+            <% for(let i = 0; i < news.length; i++ ) { %>
+            <% if( i === 0 ){ %>
+            <a class="news_one" href="/news/group/<%= news[i].id %>">
+                <div class="news_pic">
+                    <img src="<%= news[i].mobile_cover_pic_url %>" alt="">
+                    <div class="data">
+                        <span><%= news[i].publish_time %></span>
+                    </div>
+                </div>
+                <p> <%= news[i].title %> </p>
+            </a>
+            <% } else { %>
+            <a class="one" href="/news/group/<%= news[i].id %>"><%= news[i].title %></a>
+            <% } %>
+            <% } %>
+        </div>
+    </div>
+    <div class="list news">
+        <a href="/news/partygovernment" class="title">
+            <span>党政建设</span>
+            <img src="/image/mobileImg/right.png" alt="">
+        </a>
+        <% for(let i = 0; i < party.length; i++ ) { %>
+        <div class="news_list">
+            <a class="news_list_wrap" href="/news/partygovernment/<%= party[i].id %>">
+                <div class="news_list_main">
+                    <div class="left-img"><img src="<%= party[i].mobile_cover_pic_url %>" alt=""></div>
+                    <div class="right">
+                        <p><%= party[i].title %></p>
+                        <span><%= party[i].publish_time %></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <% } %>
+    </div>
+    <div class="list">
+        <a href="/news/publicservice" class="title">
+            <span>公益活动</span>
+            <img src="/image/mobileImg/right.png" alt="">
+        </a>
+        <div class="list_news">
+            <% for(let i = 0; i < public.length; i++ ) { %>
+            <% if( i === 0 ){ %>
+            <a class="news_one" href="/news/publicservice/<%= public[i].id %>">
+                <div class="news_pic">
+                    <img src="<%= public[i].mobile_cover_pic_url %>" alt="">
+                    <div class="data">
+                        <span><%= public[i].publish_time %></span>
+                    </div>
+                </div>
+                <p> <%= public[i].title %> </p>
+            </a>
+            <% } else { %>
+            <a class="one" href="/news/group/<%= public[i].id %>">
+                <%= public[i].title %>
+            </a>
+            <% } %>
+            <% } %>
+        </div>
+    </div>
+</article>
+<%- include('./common/footer.ejs') %>

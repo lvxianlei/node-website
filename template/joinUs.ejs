@@ -1,0 +1,51 @@
+<%- include('./common/header',{title,filePath}) %>
+<div class="joinUs container">
+    <div class="sub-image">
+    </div>
+    <div class="joinUs_main">
+        <ul>
+            <li>
+                <span class="active">最新职位</span>
+            </li>
+        </ul>
+        <div class="join" style="width: 90%;;margin: auto;">
+            <img src="/image/dream.png" alt="">
+            <img src="/image/chengzhang.png" alt="">
+            <img src="/image/learn.png" alt="">
+        </div>
+        <div class="content">
+            <div class="join_news">
+                <a class="back" href="./joinUs"><img src="/image/back.png"></a>
+                <div class="join_news_main">
+                    <% for(let i=0; i < workList.length; i++ ) { %>
+                    <div class="recruitment">
+                        <div class="recruitment_left">
+                            <h2><%=workList[i].post_name %></h2>
+                            <div class="recruitment_left_message">
+                                <div class="recruitment_left_message_address">
+                                    <img src="image/join_place.jpg">
+                                    <p><%=workList[i].work_city %></p>
+                                </div>
+                                <p><%=workList[i].company %></p>
+                                <p><%=workList[i].post_category %></p>
+                                <p>招聘<%=workList[i].num %>人</p>
+                            </div>
+                            <div class="recruitment_left_message_date">
+                                <img src="image/join_time.jpg">
+                                <p>发布于<%=workList[i].publish_time %></p>
+                            </div>
+                        </div>
+                        <div class="recruitment_detail">
+                            <div class="recruitment_right">
+                                <a href="/joinUs/<%= workList[i].id %>" target="_blank">点击查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                    <a class="seeMore" href="https://jobs.51job.com/all/co5821581.html" target="_blank">更多职位</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('./common/footer.ejs') %>

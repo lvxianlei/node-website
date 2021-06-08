@@ -1,0 +1,22 @@
+.content{
+    padding: .76rem .5rem 1.2rem .41rem;
+}
+.jt_news h2{
+    font-size:.33rem;
+    font-weight: bold;
+    color:rgba(17,17,17,1);
+}
+.jt_news .time{
+    display: flex;
+    font-size:.57rem;
+    font-weight:200;
+    color:rgba(160,160,160,1);
+    margin-top: .21rem;
+    line-height: 1;
+}
+.right_info{
+    margin-top: .8rem;
+}
+.right_info img{
+    width: 100%;
+}

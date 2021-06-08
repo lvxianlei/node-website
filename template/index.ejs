@@ -1,0 +1,69 @@
+<%- include('./common/header',{title,filePath}) %>
+<div class="container">
+    <section class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <% for(let i=0; i < banners.length; i++ ) { %>
+                <div class="swiper-slide">
+                    <% if(banners[i].href_url + '' === 'null'){ %>
+                    <a href="javascript:;">
+                        <img src="<%= banners[i].pic_url%>" alt="" />
+                    </a>
+                    <% }else{ %>
+                    <a href="<%= banners[i].href_url %>" target="_blank">
+                        <img src="<%= banners[i].pic_url%>" alt="" />
+                    </a>
+                    <% } %>
+                </div>
+                <% } %>
+            </div>
+            <!--导航按钮-->
+            <div class="swiper-button-prev left"></div>
+            <div class="swiper-button-next right"></div>
+            <!--如果需要分页器-->
+            <div class="swiper-pagination"></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        </div>
+    </section>
+    <article class="article">
+        <a class="articleLeft" href="/news/group/<%= news[0] && news[0].id %>" target="_blank">
+            <h2><%= news[0] && news[0].title %></h2>
+            <p>
+                <%= news[0] && news[0].summary %>
+            </p>
+        </a>
+        <div class="articleRight">
+            <div class="articleRight_title">
+                <span class="active">集团新闻</span>
+                <span>分子公司新闻</span>
+                <span class="line"></span>
+            </div>
+            <hr />
+            <div class="articleRight_info">
+                <div class="item1 select">
+                    <% for(let i=0; i < news.length; i++ ) { %>
+                    <a href="/news/group/<%= news[i].id %>"
+                        target="_blank"><span><%= news[i].publish_time%></span><%= news[i].title%></a>
+                    <% } %>
+                    <hr>
+                </div>
+                <div class="item1">
+                    <% for(let i=0; i < childNews.length; i++ ) { %>
+                    <a href="/news/subcompany/<%= childNews[i].id %>"
+                        target="_blank"><span><%= childNews[i].publish_time%></span><%= childNews[i].title%></a>
+                    <% } %>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+    </article>
+    <section class="accordion">
+        <ul class="accordion-main">
+            <li><a href="https://www.bjbln.cn/zt/20190701/" target="_blank"></a></li>
+            <li><a href="/"></a></li>
+            <li><a href="/"></a></li>
+        </ul>
+    </section>
+</div>
+<%- include('./common/footer.ejs') %>

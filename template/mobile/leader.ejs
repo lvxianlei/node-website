@@ -1,0 +1,18 @@
+<%- include('./common/header', { title, filePath }) %>
+<article class="leader">
+    <% for(let i = 0; i < executive.length; i++ ) { %>
+    <div class="leader-item">
+        <div class="top">
+            <img src="<%= executive[i].mobile_pic_url %>" alt="" />
+            <ul>
+                <li><%= executive[i].name %></li>
+                <li><%= executive[i].position %></li>
+            </ul>
+        </div>
+        <div class="description">
+            <%= executive[i].intro %>
+        </div>
+    </div>
+    <% } %>
+</article>
+<%- include('./common/footer.ejs') %>

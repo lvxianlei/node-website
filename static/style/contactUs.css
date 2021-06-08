@@ -1,0 +1,94 @@
+.top_bj{
+    width: 100%;
+    height: 96px;
+    background: url("/image/lianxiBj.png") no-repeat top center;
+    background-size: 90% auto;
+}
+@media screen and (min-width: 1921px) {
+    .top_bj {
+        height: 104px;
+    }
+}
+@media screen and (min-width:1366px) and (max-width:1680px) {
+    .top_bj {
+        height: 78px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .top_bj {
+        height: 61px;
+
+    }
+}
+.contact_main{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.contact_main ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 28px;
+    border-bottom: solid 2px #f2f2f2;
+    box-sizing: border-box;
+    margin: auto;
+    padding-right: 59px;
+}
+.contact_main ul>li{
+    font-size: 16px;
+    color: #3e3a39;
+    margin-right: 52px;
+    height: 38px;
+    cursor: default;
+}
+
+.contact_main ul li.active{
+    border-bottom: solid 2px #00569b;
+    box-sizing: border-box;
+    color: #00569b;
+}
+.contact_main .contact_content{
+    width: 100%;
+}
+.contact_content .contact_info .contact_sd{
+    width: 100%;
+    height: 644px;
+}
+.contact_content>div:nth-child(2){
+    display: none;
+}
+.contact_content .posi{
+    width: 1036px;
+    margin:80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_content .posi input{
+    width: 316px;
+    height: 54px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background-color: #f3f3f3;
+    font-size: 18px;
+    text-indent: 20px;
+}
+.contact_content .posi img{
+    width: 188px;
+    height: 53px;
+}
+Label{
+    width: 356px;
+    font-size: 14px!important;
+    padding: 20px!important;
+    border:solid 1px #ddd!important;
+}
+Label a{
+    padding-left: 6px;
+    color: #3d6dcc!important;
+    font-weight: normal;
+}
+Label p{
+    padding-top: 12px;
+}

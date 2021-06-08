@@ -1,0 +1,428 @@
+.top_bj {
+    width: 100%;
+    height: 96px;
+    background: url("/image/busBj1.png") no-repeat top center;
+    background-size: 90% auto;
+}
+
+@media screen and (min-width: 1921px) {
+    .top_bj {
+        height: 104px;
+    }
+}
+@media screen and (min-width: 1366px) and (max-width: 1680px) {
+    .top_bj {
+        height: 78px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .top_bj {
+        height: 61px;
+    }
+}
+.content {
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.busineass_main ul {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 28px;
+    border-bottom: solid 2px #f2f2f2;
+    box-sizing: border-box;
+    margin: auto;
+    padding-right: 59px;
+}
+.busineass_main ul > li {
+    font-size: 16px;
+    color: #3e3a39;
+    margin-right: 52px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.busineass_main ul li.active {
+    border-bottom: solid 2px #00569b;
+    box-sizing: border-box;
+    color: #00569b;
+}
+
+.content .item {
+    width: 1144px;
+    margin: 26px auto;
+    position: relative;
+}
+.content1 .bus_title {
+    width: 990px;
+    margin: auto;
+}
+.content1 .bus_title h2 {
+    font-size: 24px;
+    color: #00569b;
+}
+.content1 .bus_title p {
+    font-size: 14px;
+    color: #808080;
+    margin-top: 22px;
+    line-height: 26px;
+}
+.busImg_total {
+    height: auto;
+}
+.content1 .bus_img {
+    width: 100%;
+    height: 345px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.content1 .bus_img .bus_head {
+    width: 100%;
+}
+.content1 .bus_img .bus_head > .left_top {
+    width: auto;
+    height: 31px;
+    position: absolute;
+    top: 36px;
+    left: 54px;
+    color: #fff;
+}
+.content1 .type {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.content1 .type img {
+    width: auto;
+    height: 200px;
+}
+.content .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+    cursor: default;
+}
+.content1 .bus_img .cover:before {
+    content: "";
+    display: block;
+    width: 1143px;
+    height: 344px;
+    background: url("/image/cover.jpg") no-repeat;
+    opacity: 0.7;
+    background-position-x: 100%;
+}
+.content1 .cover .cover_main {
+    position: absolute;
+    width: 742px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 44;
+}
+.content1 .cover .cover_main img {
+    display: block;
+    margin: auto;
+    width: auto;
+    height: 60px;
+}
+
+.content1 .cover .cover_main p {
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 32px;
+    line-height: 26px;
+}
+
+.content1 .itemDetail {
+    width: 100%;
+    height: 569px;
+    background-color: #fff;
+    z-index: 88;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.content2 .item {
+    width: 1144px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+/*.itemContent{*/
+/*display: flex;*/
+/*text-align: left;*/
+/*flex-direction: column;*/
+/*cursor: pointer;*/
+/*border: solid 1px #cccccc;*/
+/*background: #fff;*/
+/*z-index: 99;*/
+/*}*/
+.itemContent p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 25px;
+}
+.content2 .item .item1:nth-child(1) .itemDetail {
+    width: 1076px;
+    height: 420px;
+    background-color: #ffffff;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 66;
+}
+.content2 .item .item1:nth-child(1) .itemDetail .itemContent {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    cursor: pointer;
+    background: #fff;
+    z-index: 99;
+}
+.content2 .item > div:nth-child(2) .itemDetail {
+    position: absolute;
+    left: -382px;
+    top: 0;
+    width: 1140px;
+    height: 422px;
+    background-color: #fff;
+    z-index: 66;
+    align-items: center;
+}
+.content2 .item > div:nth-child(3) .itemDetail {
+    position: absolute;
+    left: -760px;
+    top: 0;
+    width: 1140px;
+    height: 420px;
+    z-index: 66;
+    background-color: #fff;
+    align-items: center;
+}
+.itemDetail img {
+    height: auto;
+}
+.content2 .item .item1 {
+    width: 316px;
+    height: 420px;
+    position: relative;
+    margin-top: 38px;
+}
+.content2 .item .item4 {
+    width: 316px;
+    height: 420px;
+    position: relative;
+    margin-top: 38px;
+}
+.content2 .item .item3 {
+    width: 316px;
+    height: 420px;
+    position: relative;
+    margin-top: 38px;
+}
+.content2 .item .item2 {
+    width: 316px;
+    height: 420px;
+    position: relative;
+    margin-top: 38px;
+}
+.content2 .item > div:nth-child(3n + 2) {
+    margin: 38px 64px;
+}
+.content2 .item .item1 .item1-main {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.content2 .item .item1 .logo {
+    position: absolute;
+    top: 38px;
+    bottom: 18px;
+    left: 40px;
+}
+
+.content2 .item .item1 .logo hr {
+    display: inline-block;
+    width: 20px;
+    border: solid 2px #1060a1;
+    margin: 0;
+}
+.content2 .item .item1 .logo p {
+    font-size: 18px;
+    color: #1060a1;
+    padding: 18px 0 20px 0;
+    cursor: pointer;
+}
+.content2 .cover:before {
+    content: "";
+    display: block;
+    width: 316px;
+    height: 420px;
+    background: url("/image/cover.jpg") no-repeat;
+    opacity: 0.7;
+    background-size: 100% 420px;
+}
+.content2 .cover .cover_main {
+    position: absolute;
+    width: 252px;
+    top: 38px;
+    left: 40px;
+    z-index: 44;
+}
+.content2 .cover .cover_main hr {
+    display: inline-block;
+    width: 20px;
+    border: solid 2px #fff;
+    margin: 0;
+}
+.content2 .cover .cover_main h2 {
+    font-size: 18px;
+    color: #fff;
+    padding: 18px 0 20px 0;
+}
+.content2 .cover .cover_main p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+}
+.content3 .item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content3 .item .item1 {
+    width: 522px;
+    height: 523px;
+    position: relative;
+    margin-top: 15px;
+}
+.content3 .item .item1 .item2-main {
+    width: 522px;
+    height: 523px;
+}
+
+.content3 .cover:before {
+    content: "";
+    display: block;
+    width: 522px;
+    height: 523px;
+    background: url("/image/cover.jpg") no-repeat;
+    opacity: 0.7;
+    background-size: 522px 523px;
+}
+.content3 .cover .cover_main {
+    position: absolute;
+    width: 358px;
+    top: 134px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.content3 .item1 .cover .cover_main img {
+    /*width: 117px;*/
+    /*height: 45px;*/
+    display: block;
+    margin: 0 auto 30px;
+}
+.content3 .item1:nth-child(2) .cover .cover_main img {
+    /*width: 93px;*/
+    height: 89px;
+    margin-bottom: 5px;
+    margin-top: -16px;
+}
+.content3 .cover .cover_main p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 22px;
+}
+
+.cover_main_bottom {
+    display: flex;
+    width: 800px;
+    position: absolute;
+    bottom: 74px;
+    left: 126px;
+    justify-content: space-around;
+}
+.cover_main_bottom div {
+    border: 1px solid #ececec;
+    width: 166px;
+    height: 166px;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    float: left;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover_main_bottom div > span {
+    line-height: 20px;
+}
+.content5 .item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.type .financial-item {
+    position: relative;
+    width: auto;
+    height: 200px;
+}
+.type .financial-item .cover:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200px;
+    background: #f3f3f3;
+    background-size: 150px 200px;
+    opacity: 10;
+}
+.type .financial-item .cover .cover_main {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0 12px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.type .financial-item .cover .cover_main p {
+    font-size: 14px;
+    color: #808080;
+    line-height: 20px;
+    margin-top: 4px;
+    text-align: left;
+}
+.itemDetail {
+    width: 100%;
+    height: 613px;
+    background-color: #fff;
+    z-index: 88;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.pic {
+    height: 62px;
+    width: auto;
+}

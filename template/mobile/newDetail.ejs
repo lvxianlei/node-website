@@ -1,0 +1,15 @@
+<%- include('./common/header', { title, filePath }) %>
+<div class="content">
+    <div class="jt_news">
+        <h2><%= newInfo.title %></h2>
+        <div class="time">
+            <% for(let i=0; i < newInfo.publish_time.split(" ").length; i++ ) { %>
+            <p> <%= newInfo.publish_time.split(" ")[i] %> </p>
+            <% } %>
+        </div>
+        <div class="right_info">
+            <%- newInfo.content %>
+        </div>
+    </div>
+</div>
+<%- include('./common/footer.ejs') %>

@@ -1,0 +1,46 @@
+article{
+    padding-bottom: 1.4rem;
+}
+.type{
+    padding: 0 .49rem 0 .41rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .52rem;
+}
+.type>div>img{
+    width: 1.55rem;
+    height: 2.05rem;
+    margin-right: .13rem;
+    margin-bottom: .18rem;
+}
+.type>div:nth-child(4n+4) img{
+    margin-right: 0;
+}
+article>.ouHouse{
+    padding: 0.75rem 0.5rem 0 0.41rem;
+}
+article>.ouHouse:last-child{
+    padding: 0.75rem 0.5rem 1.3rem 0.41rem;
+}
+.financial-item{
+    width: 6.29rem;
+    display: flex;
+    margin-top: .22rem;
+}
+.financial-item>img{
+    width: 2.45rem!important;
+    height: 1.87rem!important;
+    margin: 0!important;
+}
+.financial-item .cover{
+    width: 4.14rem;
+    background-color: #EFEFEF;
+}
+.financial-item .cover .cover_main{
+    padding: .3rem .45rem 0 .45rem;
+}
+.financial-item .cover .cover_main p{
+    font-size:.24rem;
+    font-weight:300;
+    color:rgba(105,104,104,1);
+}
